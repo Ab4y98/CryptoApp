@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const path = require('path');
-// Load .env from root directory (parent of server folder)
+// Load .env from root directory (parent of server folder).
 require('dotenv').config({ path: path.resolve(__dirname, '..', '.env') });
 
 const app = express();
