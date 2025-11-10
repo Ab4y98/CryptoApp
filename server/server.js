@@ -27,7 +27,7 @@ app.use('/api/feedback', require('./routes/feedback'));
 app.use('/api/profile', require('./routes/profile'));
 
 // Connect to MongoDB
-mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://daniel:Aa123456!@cluster0.gnsqdoj.mongodb.net/blabla', {
+mongoose.connect('mongodb+srv://daniel:Aa123456!@cluster0.gnsqdoj.mongodb.net/blabla', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
