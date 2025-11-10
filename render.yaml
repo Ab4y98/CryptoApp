@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: moveocrypto-backend
+    env: node
+    plan: free
+    rootDir: server
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: MONGODB_URI
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: CRYPTOPANIC_API_KEY
+        sync: false
+      - key: OPENROUTER_API_KEY
+        sync: false
+

@@ -1,0 +1,50 @@
+.login-signup-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.login-signup-card {
+  background: white;
+  border-radius: 12px;
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.login-signup-card h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.toggle-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.toggle-buttons button {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #ddd;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+.toggle-buttons button.active {
+  background-color: #667eea;
+  color: white;
+  border-color: #667eea;
+}
+
+.toggle-buttons button:hover {
+  border-color: #667eea;
+}
+
